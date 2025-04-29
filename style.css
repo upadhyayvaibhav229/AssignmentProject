@@ -5,7 +5,7 @@
 /* background colour */
 
 .bg-slate { background-color: #28293E  !important;}
-.bg-white { background-color: #FFFFFF !important; }
+.bg-white { background-color: #FDF0e9 !important; }
 
 
 /* button */
@@ -18,9 +18,12 @@
 }
 
 
+
+
 /* text colour */
 .text-red { color: #EF6D58 !important; }
 .text-Crimson-Brown { color: #391400  !important; }
+/* .text-dark-gray {color: #391400 !important;} */
 
 .height-100 { height: 50% !important; }
 
