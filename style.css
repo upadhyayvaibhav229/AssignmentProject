@@ -5,7 +5,8 @@
 /* background colour */
 
 .bg-slate { background-color: #28293E  !important;}
-.bg-white { background-color: #FDF0e9 !important; }
+.bg-skin { background-color: #F3D1BF !important; }
+/* .bg-navy-blue { background-color: #312e81 !important; } */
 
 
 /* button */
@@ -76,7 +77,31 @@
   }
 
   .box{
-    height: 400px;
+    height: 300px;
     /* width: 500px; */
   }
+
+  .contact{
+    background: url('Img/map.png');
+    background-size: cover;
+  }
+  
+
+  /* FAQ */
+  /* toggle button */
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  }
+
+  .accordion-button::after {
+    background-color: #EF6D58; /* Your coral color */
+    padding: 6px;
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   
