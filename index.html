@@ -11,8 +11,9 @@
 </head>
 
 <body>
-  <!-- navbar -->
   <div class="bg-slate min-vh-100">
+
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-transparent px-4">
       <div class="container-fluid d-flex justify-content-between align-items-center">
 
@@ -42,7 +43,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid h-auto d-flex ">
+    <div class="container-fluid h-auto d-flex mt-5 p-4">
       <div class="d-flex flex-row align-items-center justify-content-around w-100 column-gap-5">
         <div class="ms-5 p-2">
           <h3 class="text-white fs-6 lh-1 text-red">Modern Studio</h3>
@@ -50,13 +51,22 @@
             We’re Help <br>
             To Build Your <br>
             Dream Project</p>
-            <p class="text-white">Agency provides a full service range including technical <br> skills, design, business understanding.</p>
-            <button class="btn bg-button text-white px-4 py-2 ">How We Work</button>
+          <p class="text-white">Agency provides a full service range including technical <br> skills, design, business
+            understanding.</p>
+          <button class="btn bg-button text-white px-4 py-2 ">How We Work</button>
         </div>
 
         <div class="p-2">
           <img src="Img/hero.png" class="img-fluid img" alt="hero" class="img-fluid">
         </div>
+      </div>
+    </div>
+    <div class="text-white d-flex flex-row ms-auto container px-5  gap-4 p-4">
+      <div class="profile bg-primary rounded-circle ">
+      </div>
+      <div class="fs-6 lh-1">
+        <p class="text-gray">"Put themselves in the merchant's shoes"</p>
+        <p>Meta Inc.</p>
       </div>
     </div>
 
@@ -71,7 +81,7 @@
       <img src="Img/Travelexp.png" alt="logo4" class="img-fluid">
       <img src="Img/vortex.png" alt="logo5" class="img-fluid">
     </div>
-  
+
     <hr class="container">
 
     <!-- About Section -->
@@ -102,41 +112,44 @@
     <!-- experiences -->
     <div class="d-flex justify-content-center align-items-center p-5 mt-5">
       <!-- Card 1 -->
-      <div class="border border-2 d-flex flex-column justify-content-center text-start p-3" style="height: 200px; width: 400px;">
+      <div class="border border-2 d-flex flex-column justify-content-center text-start p-3"
+        style="height: 200px; width: 400px;">
         <p class="fs-2 mb-2 fw-bold">42%</p>
         <p class="fs-4">Years of experience</p>
       </div>
-    
+
       <!-- Card 2 -->
-      <div class="border border-2 d-flex flex-column justify-content-center text-start p-3" style="height: 200px; width: 400px;">
+      <div class="border border-2 d-flex flex-column justify-content-center text-start p-3"
+        style="height: 200px; width: 400px;">
         <p class="fs-2 mb-2 fw-bold">73+</p>
         <p class="fs-4">Agency Member</p>
       </div>
-    
+
       <!-- Card 3 -->
-      <div class="border border-2 d-flex flex-column justify-content-center text-start p-3" style="height: 200px; width: 400px;">
+      <div class="border border-2 d-flex flex-column justify-content-center text-start p-3"
+        style="height: 200px; width: 400px;">
         <p class="fs-2 mb-2 fw-bold">5,000</p>
         <p class="fs-4">Projects complete</p>
       </div>
     </div>
 
 
-    <div class="container mt-5">
+    <div class="container mt-5 w-100">
       <div class="row align-items-center justify-content-center p-5">
-        
+
         <!-- Left Column: Text -->
         <div class="col-md-6">
           <h4 class="text-red">How we work</h4>
           <p class=" fw-bold" style="font-size: 3rem;">Making Your Projects <br> Look Awesome</p>
           <p class="text-Crimson-Brown" style="font-size: 16px;">
-            Technical skills, design, business u  nderstanding, ability to <br>
+            Technical skills, design, business u nderstanding, ability to <br>
             put themselves in the merchant's shoes.
           </p>
           <button type="button" class="btn bg-transparent border text-brown">Read More</button>
         </div>
-    
+
         <!-- Right Column: Numbered Steps -->
-        <div class="col-md-6">
+        <div class="col-md-5 container">
           <div class="row gy-4 text-Crimson-Brown">
             <div class="col-12 d-flex align-items-center gap-4">
               <h2 class="display-4 fw-bold text-brown me-3">1</h2>
@@ -152,14 +165,93 @@
             </div>
           </div>
         </div>
-    
+
+        <hr class="container mt-5">
       </div>
     </div>
 
     <!-- video -->
-    
+    <div class="container px-5 py-5">
+      <div class="d-flex justify-content-around gap-5 align-items-center ">
+
+        <!-- Video Placeholder -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="position-relative rounded overflow-hidden shadow" style="aspect-ratio: 16 / 9;">
+            <img src="Img/videothumbnail.png" alt="video placeholder" class="img-fluid w-100 h-100 object-fit-cover">
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <span class="play-button"><img src="Img/play.png" class="" alt=""></span>
+            </div>
+            <div class="position-absolute bottom-0 start-0 bg-dark text-white px-2 py-1 small rounded-end">1:45</div>
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="col-md-6">
+          <p class="text-uppercase text-danger small mb-1">Video Reel</p>
+          <h2 class="fw-bold text-Crimson-Brown">Unlock The Greatest <br> Value Possible</h2>
+          <p class="text-secondary mt-3 " style="max-width: 500px;">
+            Design, business understanding, ability to put themselves <br>
+            in the merchant's shoes meant to partner.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
   </section>
-  
+
+  <!-- portfolio section -->
+  <section class="container-fluid bg-slate p-5 text-white">
+    <h2 class="text-center text-danger fs-5">PORTFOLIO</h2>
+    <h1 class="text-center text-white">Latest Work</h1>
+    <div class="d-flex justify-content-center gap-5 mt-5 fs-4">
+      <p class="position-relative">Show All <span class="position-absolute top-0 " style="font-size: 0.88rem;">14</span>
+      </p>
+      <p class="position-relative text-gray">Design <span class="position-absolute top-0 "
+          style="font-size: 0.88rem;">6</span></p>
+      <p class="position-relative text-gray">Branding <span class="position-absolute top-0 "
+          style="font-size: 0.88rem;">4</span></p>
+      <p class="position-relative text-gray">Illustration <span class="position-absolute top-0 "
+          style="font-size: 0.88rem;">3</span></p>
+      <p class="position-relative text-gray">Motion<span class="position-absolute top-0 "
+          style="font-size: 0.88rem;">1</span></p>
+    </div>
+
+    <div class="container mt-4">
+
+      <div class="row g-4 align-items-center justify-content-center">
+        <div class="col-md-4">
+          <div class="p-4 bg-white  rounded text-center shadow-sm box" id="box1">
+            <button class="bg-white p-2 border-0 rounded-5 mb-2 ">Design</button>
+            <h5 class="fw-semibold">Sofa</h5>
+          </div>
+        </div>
+        <div class="col-md-6" >
+          <div class="p-4 bg-white border rounded text-center shadow-sm box" id="box2">
+            <h5 class="fw-semibold">Design</h5>
+            <p class="text-muted">Creative visuals for modern brands.</p>
+          </div>
+        </div>
+        <div class="col-md-6 box" >
+          <div class="p-4 bg-white border rounded text-center shadow-sm box" id="box3">
+            <h5 class="fw-semibold">Development</h5>
+            <p class="text-muted">Robust solutions from front to back.</p>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="p-4 bg-white border rounded text-center shadow-sm box" id="box4">
+            <h5 class="fw-semibold">Marketing</h5>
+            <p class="text-muted">Drive traffic, leads, and growth.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
