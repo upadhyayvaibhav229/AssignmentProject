@@ -19,7 +19,6 @@
 }
 
 .fs-6 {font-size: 1rem !important;}
-.fs-7{font-size: 0.89rem !important;}
 
 
 /* text colour */
@@ -34,6 +33,8 @@
     height: 500px !important;
     width: 500px !important;
 }
+
+/* hero section profile */
 .profile {
     margin-left: 2rem !important;
     background: url('/Img/profile.png') no-repeat center;
@@ -46,6 +47,7 @@
 }
 
 
+/* about section */
 .play-button {
     width: 60px;
     height: 60px;
@@ -57,6 +59,8 @@
     justify-content: center;
     cursor: pointer;
   }
+
+  /* Latest work */
 
   #box1{
     background: url('Img/sofa.png');
@@ -81,9 +85,11 @@
     /* width: 500px; */
   }
 
+  /* contact */
   .contact{
     background: url('Img/map.png');
     background-size: cover;
+    height: 100vh;
   }
   
 
@@ -104,4 +110,37 @@
     background-position: center;
   }
 
-  
+  @media (max-width: 576px) {
+    .fs-sm-14 {
+      font-size: 2.5rem !important;
+    }
+
+    .fs-sm-16{
+      font-size: 3rem !important;
+    }
+
+    .fs-sm-5{
+      font-size: 1.5rem !important;
+    }
+  }
+
+
+
+
+  /* portfolio */
+
+
+  @media (max-width: 400px) {
+    .banner{
+      height: 800px !important;
+    }
+
+    .content{
+      margin-top: 4rem !important;
+    }
+
+    .block{
+      width: 400px !important;
+      height: 500px !important;
+    }
+  }

@@ -11,67 +11,92 @@
 </head>
 
 <body>
+  <!-- Hero Section -->
   <div class="bg-slate min-vh-100">
 
-    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-transparent px-4">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-
+      <div class="container-fluid">
+    
         <!-- Logo -->
         <a class="navbar-brand" href="#">
           <img src="Img/logo.png" style="width: 8rem;" alt="Logo">
         </a>
-
-        <!-- Nav Links -->
-        <ul class="navbar-nav d-flex flex-row gap-5 mb-0">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Blog</a>
-          </li>
-        </ul>
-
-        <!-- Button -->
-        <button type="button" class="btn btn-outline-light px-4 py-2">Light</button>
+    
+        <!-- Toggler for small screens -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- Custom hamburger icon style -->
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+    
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-center gap-lg-4">
+            <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Service</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+          </ul>
+        </div>
+    
+        <!-- Action Button -->
+        <div class="d-none d-lg-block">
+          <button class="btn btn-outline-light px-4 py-2">Contact Us</button>
+        </div>
       </div>
     </nav>
-
-    <div class="container-fluid h-auto d-flex mt-5 p-4">
-      <div class="d-flex flex-row align-items-center justify-content-around w-100 column-gap-5">
-        <div class="ms-5 p-2">
-          <h3 class="text-white fs-6 lh-1 text-red">Modern Studio</h3>
-          <p class="text-white  lh-1" style="font-size: 72px;">
+    
+    <!-- Hero Section -->
+    <div class="container mt-5">
+      <div class="row align-items-center">
+        
+        <!-- Left Text -->
+        <div class="col-12 col-md-6 mb-4 text-md-start">
+          <h3 class="text-white fs-6 lh-1 text-danger">Modern Studio</h3>
+          <p class="text-white fw-bold fs-sm-16 lh-sm display-5">
             We’re Help <br>
             To Build Your <br>
-            Dream Project</p>
-          <p class="text-white">Agency provides a full service range including technical <br> skills, design, business
-            understanding.</p>
-          <button class="btn bg-button text-white px-4 py-2 ">How We Work</button>
-        </div>
+            Dream Project
+          </p>
+          <p class="text-white small">
+            Agency provides a full service range including technical <br class="d-none d-md-block">
+            skills, design, business understanding.
+          </p>
+          <div class="d-none d-md-block">
 
-        <div class="p-2">
-          <img src="Img/hero.png" class="img-fluid img" alt="hero" class="img-fluid">
+            <button class="btn bg-button text-white px-4 py-2 mt-2">How We Work</button>
+            <button class="btn bg-transparent text-white px-4 py-2 mt-2" id="contactbtn">Contact Us</button>
+          </div>
+        </div>
+  
+        <!-- Right Image -->
+        <div class="col-12 col-md-6 mt-sm-2 text-center">
+          <img src="Img/hero.png" class="img-fluid" style="height: 500px;" alt="hero">
+        </div>
+        <div class="d-flex justify-content-around d-md-none">
+
+          <button class="btn bg-button text-white px-4 py-2 mt-2">How We Work</button>
+          <button class="btn bg-transparent text-white px-4 py-2 mt-2" id="contactbtn">Contact Us</button>
         </div>
       </div>
     </div>
-    <div class="text-white d-flex flex-row ms-auto container px-5  gap-4 p-4">
-      <div class="profile bg-primary rounded-circle ">
-      </div>
-      <div class="fs-6 lh-1">
-        <p class="text-gray">"Put themselves in the merchant's shoes"</p>
-        <p>Meta Inc.</p>
+  
+    <!-- Testimonial -->
+    <div class="container p-5">
+      <div class="d-flex align-items-center gap-3 text-white">
+        <div class="profile bg-primary rounded-circle" style="width: 50px; height: 50px;"></div>
+        <div>
+          <p class="mb-1 small text-white">"Put themselves in the merchant's shoes"</p>
+          <p class="mb-0">Meta Inc.</p>
+        </div>
       </div>
     </div>
-
+  
   </div>
+  
   <!-- end hero section -->
+
+  <!-- About section -->
   <section class="container-fluid bg-skin">
     <!-- Logos Section -->
     <div class="d-flex flex-wrap flex-row justify-content-between align-items-center gap-3 about p-5">
@@ -88,21 +113,21 @@
     <div class="container" style="margin-top: 5rem;">
       <div class="row">
         <div class="col-md-6">
-          <img src="Img/about.png" alt="hero2" class="img-fluid" style="height: 500px;">
+          <img src="Img/about.png" alt="hero2" class="img-fluid"                                    >
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mt-5">
           <h3 class="text-slate fs-6 lh-1">About Us</h3>
-          <p class="text-Crimson-Brown lh-1 fw-bold" style="font-size: 72px;">
+          <p class="text-Crimson-Brown lh-1 fw-bold fs-sm-14" style="font-size: 72px;">
             An Experience <br>
             Design Agency
           </p>
           <p class="text-danger-emphasis fw-medium">Provides a full service range.</p>
-          <p class="text-danger-emphasis">
+          <p class="text-danger-emphasis fs-sm-5 ">
             Ability to put themselves in the merchant's shoes. It is <br>
             meant to partner on the long run, and work as an extension <br>
             of the merchant's team.
           </p>
-          <button class="btn bg-transparent text-Crimson-Brown fw-bold shadow-lg bg-white px-4 text-uppercase">
+          <button class="btn text-Crimson-Brown fw-bold shadow-lg bg-white px-4 text-uppercase">
             About us
           </button>
         </div>`
@@ -110,7 +135,7 @@
     </div>
 
     <!-- experiences -->
-    <div class="d-flex flex-wrap justify-content-center align-items-center p-5 mt-5">
+    <div class="d-flex flex-wrap justify-content-center align-items-center p-md-5   mt-sm-1">
       <!-- Card 1 -->
       <div class="border border-2 d-flex flex-column justify-content-center text-start p-3"
         style="height: 200px; width: 400px;">
@@ -135,7 +160,7 @@
 
 
     <div class="container mt-5 w-100">
-      <div class="row align-items-center justify-content-center p-5">
+      <div class="row align-items-center justify-content-center">
 
         <!-- Left Column: Text -->
         <div class="col-md-6">
@@ -149,7 +174,7 @@
         </div>
 
         <!-- Right Column: Numbered Steps -->
-        <div class="col-md-5 container">
+        <div class="col-md-5 container mt-5">
           <div class="row gy-4 text-Crimson-Brown">
             <div class="col-12 d-flex align-items-center gap-4">
               <h2 class="display-4 fw-bold text-brown me-3">1</h2>
@@ -170,42 +195,41 @@
       </div>
     </div>
 
-    <!-- video -->
     <div class="container px-5 py-5">
-      <div class="d-flex justify-content-around gap-5 align-items-center ">
-
+      <div class="row align-items-center g-5">
+        
         <!-- Video Placeholder -->
         <div class="col-md-6 mb-4 mb-md-0">
           <div class="position-relative rounded overflow-hidden shadow" style="aspect-ratio: 16 / 9;">
             <img src="Img/videothumbnail.png" alt="video placeholder" class="img-fluid w-100 h-100 object-fit-cover">
             <div class="position-absolute top-50 start-50 translate-middle text-white">
-              <span class="play-button"><img src="Img/play.png" class="" alt=""></span>
+              <span class="play-button"><img src="Img/play.png" alt=""></span>
             </div>
             <div class="position-absolute bottom-0 start-0 bg-dark text-white px-2 py-1 small rounded-end">1:45</div>
           </div>
         </div>
-
+    
         <!-- Text Content -->
         <div class="col-md-6">
           <p class="text-uppercase text-danger small mb-1">Video Reel</p>
           <h2 class="fw-bold text-Crimson-Brown">Unlock The Greatest <br> Value Possible</h2>
-          <p class="text-secondary mt-3 " style="max-width: 500px;">
+          <p class="text-secondary mt-3" style="max-width: 500px;">
             Design, business understanding, ability to put themselves <br>
             in the merchant's shoes meant to partner.
           </p>
         </div>
-
+    
       </div>
     </div>
-
+    
 
   </section>
 
   <!-- portfolio section -->
-  <section class="container-fluid bg-slate p-5 text-white">
+  <section class="container-fluid bg-slate p-5 text-white ">
     <h2 class="text-center text-danger fs-5">PORTFOLIO</h2>
     <h1 class="text-center text-white">Latest Work</h1>
-    <div class="d-flex justify-content-center gap-5 mt-5 fs-4">
+    <div class="d-md-flex d-none  flex-wrap justify-content-center gap-5 mt-5 fs-4">
       <p class="position-relative">Show All <span class="position-absolute top-0 " style="font-size: 0.88rem;">14</span>
       </p>
       <p class="position-relative text-gray">Design <span class="position-absolute top-0 "
@@ -217,6 +241,16 @@
       <p class="position-relative text-gray">Motion<span class="position-absolute top-0 "
           style="font-size: 0.88rem;">1</span></p>
     </div>
+
+    <select class="form-select d-md-none d-block">
+      <option selected>All Work</option>
+      <option value="frontend">Sofa</option>
+      <option value="backend">Design</option>
+      <option value="fullstack">Branding</option>
+      <option value="fullstack">Illustration</option>
+      <option value="fullstack">Motion</option>
+    </select>
+    
 
     <div class="container mt-4">
 
@@ -266,9 +300,130 @@
 
     </div>
 
+
+
+    
+    <div class="banner container mt-5 p-4 position-relative bg-skin rounded">
+
+      <!-- Top-left star image (positioned partially outside) -->
+      <div class="position-absolute" style="top: -50px; left: 1rem;">
+        <img src="Img/icon.png" alt="icon" style="width: 100px; height: auto;">
+      </div>
+    
+      <div class="row align-items-center text-center text-md-start gy-4">
+    
+        <!-- Text Column -->
+        <div class="col-12 col-md-6 col-lg-4 content">
+          <h4>GET STARTED</h4>
+          <p class="fs-3">We Help Companies <br class="d-none d-md-block"> Move Faster</p>
+          <button class="btn btn-danger text-white mt-2">Contact Us</button>
+        </div>
+    
+        <!-- Center Image -->
+        <div class="col-12 col-md-6 col-lg-4 block">
+          <img src="Img/block.png" alt="block" class="img-fluid">
+        </div>
+    
+      </div>
+    
+      <!-- Bottom-right image (always sticks to corner) -->
+      <div class="position-absolute portfolio1" style="bottom: 0; right: 0;">
+        <img src="Img/portfolio.png" alt="portfolio" class="img-fluid" style="max-width: 400px;">
+      </div>
+    
+    </div>
+
+
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">OUR TEAM</h1>
+        <p class="text-muted fs-4">Team of Designers and Developers</p>
+      </div>
+  
+      <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+  
+          <!-- Carousel Item 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-lg-3 text-center">
+                <div class="card border-0">
+                  <img src="https://via.placeholder.com/200" class="card-img-top rounded-circle mx-auto mt-3" alt="Azah Anyeni" style="width: 150px; height: 150px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Azah Anyeni</h5>
+                    <p class="card-text text-muted">Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Carousel Item 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-lg-3 text-center">
+                <div class="card border-0">
+                  <img src="https://via.placeholder.com/200" class="card-img-top rounded-circle mx-auto mt-3" alt="Roelof Bekkenenks" style="width: 150px; height: 150px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Roelof Bekkenenks</h5>
+                    <p class="card-text text-muted">React Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Carousel Item 3 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-lg-3 text-center">
+                <div class="card border-0">
+                  <img src="https://via.placeholder.com/200" class="card-img-top rounded-circle mx-auto mt-3" alt="Leonardo Oliveira" style="width: 150px; height: 150px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Leonardo Oliveira</h5>
+                    <p class="card-text text-muted">Illustrator</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Carousel Item 4 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-lg-3 text-center">
+                <div class="card border-0">
+                  <img src="https://via.placeholder.com/200" class="card-img-top rounded-circle mx-auto mt-3" alt="Izabella Tabakova" style="width: 150px; height: 150px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Izabella Tabakova</h5>
+                    <p class="card-text text-muted">Product Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  
+  
+    
   </section>
 
   <!-- end portfolio section -->
+
+  <!-- pricing section -->
 
   <section class="bg-skin p-5">
     <div class="container m-lg-3">
@@ -300,7 +455,10 @@
         <!-- Card 2 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 p-3">
-            <span class="bg-danger text-white rounded-4 px-2 py-1 mb-2 d-inline-block">Popular</span>
+            <div>
+
+              <button class="bg-danger text-white rounded-4 px-2 py-1 mb-2 border-0">Popular</button>
+            </div>
             <div class="card-body">
               <p class="card-title">DESIGN<br>
                 <span class="fw-bold fs-1">$1500</span>
@@ -405,35 +563,37 @@
     </div>
   </section>
 
-  <!-- contact section -->
-  <section class="container-fluid bg-white p-5 contact d-flex justify-content-around align-content-center">
-    <!-- form with white bg -->
-    <div class="col-md-6 bg-white rounded shadow-sm p-4 ">
+  <!-- pricing section end -->
+
+  <!-- contact us section -->
+
+  <section class="container-fluid bg-white p-5 contact d-flex flex-wrap justify-content-center align-items-center">
+    <!-- Form with white bg -->
+    <div class="col-12 col-md-6 bg-white rounded shadow-sm p-4">
       <h1 class="fw-bold text-Brown fs-3 p-2">Get In Touch</h1>
       <form action="" method="post" class="d-flex flex-column gap-3">
         <input type="email" class="form-control" placeholder="Email" required>
         <input type="text" class="form-control" placeholder="Subject" required>
         <textarea class="form-control" rows="4" placeholder="Message"></textarea>
         <div class="d-flex justify-content-end">
-
           <button type="submit" class="btn bg-button text-white text-uppercase">Submit Now</button>
         </div>
       </form>
-
-
     </div>
-
-
-    <div class="mt-5 col-md-6 d-flex flex-column align-items-center justify-content-center gap-4">
-      <img src="Img/pin.png" alt="">
+  
+    <!-- Image Section -->
+    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center gap-4 mt-5 mt-md-0">
+      <img src="Img/pin.png" alt="Pin image" class="img-fluid" style="max-width: 100%; height: auto;">
     </div>
-
+  
   </section>
 
+  <!-- end -->
+    
   <!-- Footer -->
   <footer class="bg-light pt-5 pb-4">
-    <div class="container">
-      <div class="row g-4">
+    <div class="container text-center">
+      <div class="row g-4 ">
         <!-- Agency Column -->
         <div class="col-md-3">
           <h2 class="fw-bold text-dark mb-3">Agency</h2>
@@ -476,7 +636,7 @@
           <p class="text-muted mb-0 fw-medium">Copyright © 2022 Laaqiq. All Rights Reserved.</p>
         </div>
         <div class="col-md-6 text-md-end">
-          <div class="d-flex justify-content-md-end gap-3">
+          <div class="d-flex flex-wrap justify-content-md-end justify-content-around gap-3">
             <a href="#" class="text-muted text-decoration-none fw-medium">Terms of Use</a>
             <a href="#" class="text-muted text-decoration-none fw-medium">Privacy Policy</a>
           </div>
@@ -484,6 +644,7 @@
       </div>
     </div>
   </footer>
+  <!-- footer ends -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
