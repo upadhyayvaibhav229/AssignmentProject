@@ -70,10 +70,10 @@
         </div>
   
         <!-- Right Image -->
-        <div class="col-12 col-md-6 mt-sm-2 text-center">
+        <div class="col-12 col-md-6 mt-sm-5 text-center">
           <img src="Img/hero.png" class="img-fluid" style="height: 500px;" alt="hero">
         </div>
-        <div class="d-flex justify-content-around d-md-none">
+        <div class="d-flex justify-content-around d-md-none mt-3">
 
           <button class="btn bg-button text-white px-4 py-2 mt-2">How We Work</button>
           <button class="btn bg-transparent text-white px-4 py-2 mt-2" id="contactbtn">Contact Us</button>
@@ -99,12 +99,24 @@
   <!-- About section -->
   <section class="container-fluid bg-skin">
     <!-- Logos Section -->
-    <div class="d-flex flex-wrap flex-row justify-content-between align-items-center gap-3 about p-5">
-      <img src="Img/digitalside.png" alt="logo1" class="img-fluid">
-      <img src="Img/fusion.png" alt="logo2" class="img-fluid">
-      <img src="Img/MediaFury.png" alt="logo3" class="img-fluid">
-      <img src="Img/Travelexp.png" alt="logo4" class="img-fluid">
-      <img src="Img/vortex.png" alt="logo5" class="img-fluid">
+    <div class="container">
+      <div class="row g-3 align-items-center justify-content-around">
+        <div class="col-6 col-md-4 col-lg-2">
+          <img src="Img/digitalside.png" alt="logo1" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <img src="Img/fusion.png" alt="logo2" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <img src="Img/MediaFury.png" alt="logo3" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <img src="Img/Travelexp.png" alt="logo4" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <img src="Img/vortex.png" alt="logo5" class="img-fluid">
+        </div>
+      </div>
     </div>
 
     <hr class="container">
@@ -333,90 +345,69 @@
     
     </div>
 
-
-    <div class="container py-5">
+    <div class="container py-5 mt-5 position-relative">
+      <!-- Top Section -->
       <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold">OUR TEAM</h1>
-        <p class="text-muted fs-4">Team of Designers and Developers</p>
+        <p class="section-label">OUR TEAM</p>
+        <h2 class="team-title">Team of Designers <br> and Developers</h2>
       </div>
-  
-      <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-  
-          <!-- Carousel Item 1 -->
-          <div class="carousel-item active">
-            <div class="row justify-content-center">
-              <div class="col-md-4 col-lg-3 text-center">
-                <div class="card border-0">
-                  <img src="https://via.placeholder.com/200" class="card-img-top rounded-circle mx-auto mt-3" alt="Azah Anyeni" style="width: 150px; height: 150px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold">Azah Anyeni</h5>
-                    <p class="card-text text-muted">Designer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Carousel Item 2 -->
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-4 col-lg-3 text-center">
-                <div class="card border-0">
-                  <img src="https://via.placeholder.com/200" class="card-img-top rounded-circle mx-auto mt-3" alt="Roelof Bekkenenks" style="width: 150px; height: 150px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold">Roelof Bekkenenks</h5>
-                    <p class="card-text text-muted">React Developer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Carousel Item 3 -->
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-4 col-lg-3 text-center">
-                <div class="card border-0">
-                  <img src="https://via.placeholder.com/200" class="card-img-top rounded-circle mx-auto mt-3" alt="Leonardo Oliveira" style="width: 150px; height: 150px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold">Leonardo Oliveira</h5>
-                    <p class="card-text text-muted">Illustrator</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Carousel Item 4 -->
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-4 col-lg-3 text-center">
-                <div class="card border-0">
-                  <img src="https://via.placeholder.com/200" class="card-img-top rounded-circle mx-auto mt-3" alt="Izabella Tabakova" style="width: 150px; height: 150px; object-fit: cover;">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold">Izabella Tabakova</h5>
-                    <p class="card-text text-muted">Product Designer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
+    
+      <!-- Custom Carousel Controls (Top Right) -->
+      <div class="custom-carousel-controls">
+        <button data-bs-target="#teamCarousel" data-bs-slide="prev">&larr;</button>
+        <button data-bs-target="#teamCarousel" data-bs-slide="next">&rarr;</button>
+      </div>
+    
+      <!-- Carousel -->
+      <div id="teamCarousel" class="carousel slide" data-bs-ride="false">
+        <!-- Indicators -->
+        <div class="carousel-indicators justify-content-center mt-2">
+          <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-  
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    
+        <div class="carousel-inner">
+    
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center">
+              <div class="col">
+                <div class="card">
+                  <img src="/Img/azha.png" style="height: 200px;" alt="Azah">
+                  <h5 class="mb-1 role">Azah Anyeni</h5>
+                  <p class="role">Designer</p>
+                </div>
+              </div>
+              <div class="col text-white mb-5">
+                <div class="card">
+                  <img src="Img/roleof.png" alt="Roelof">
+                  <h5 class="mb-1 role">Roelof Bekkenenks</h5>
+                  <p class="role">React Developer</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Img/leo.png" style="height: 200px;" alt="Leonardo">
+                  <h5 class="mb-1">Leonardo Oliveira</h5>
+                  <p class="role">Illustrator</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Img/lazy.png" style="height: 200px;" alt="Izabella">
+                  <h5 class="mb-1">Izabella Tabakova</h5>
+                  <p class="role">Product Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        
+    
+        </div>
       </div>
     </div>
-  
   
     
   </section>
@@ -437,7 +428,7 @@
 
         <!-- Card 1 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 p-3 bg-transparent">
+          <div class="card h-100 p-3 bg-transparent shadow-lg">
             <p class="text-danger">CONSULTATION</p>
             <div class="card-body">
               <h1 class="card-title text-Crimson-Brown">Free</h1>
@@ -447,14 +438,17 @@
                 <li><input type="checkbox" disabled> Market Analysis</li>
                 <li><input type="checkbox" disabled> Production</li>
               </ul>
-              <button class="btn bg-transparent border border-2 w-100">CONTACT US</button>
+              <div>
+
+                <button class="btn bg-transparent border border-2 w-100">CONTACT US</button>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 p-3">
+          <div class="card1 bg-white shadow-lg h-100 p-3">
             <div>
 
               <button class="bg-danger text-white rounded-4 px-2 py-1 mb-2 border-0">Popular</button>
@@ -465,8 +459,8 @@
               </p>
               <p class="text-muted">Provide your business with a variety of digital solutions to promote.</p>
               <ul class="list-unstyled mt-3 mb-4">
-                <li><input type="checkbox" disabled> Brand Design</li>
-                <li><input type="checkbox" disabled> Market Analysis</li>
+                <li><input type="checkbox" disabled checked> Brand Design</li>
+                <li><input type="checkbox" disabled checked> Market Analysis</li>
                 <li><input type="checkbox" disabled> Production</li>
               </ul>
               <button class="btn bg-transparent border border-2 w-100">CONTACT US</button>
@@ -475,16 +469,16 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 p-3 bg-transparent">
+        <div class="col-12 col-md-6 col-lg-4 ">
+          <div class="card h-100 p-3 bg-transparent shadow-lg">
             <p class="text-danger">DESIGN+CODE</p>
             <div class="card-body">
               <h1 class="card-title">$2900</h1>
               <p class="text-muted">Help you hit your marketing goals and grow your business.</p>
               <ul class="list-unstyled mt-3 mb-4">
-                <li><input type="checkbox" disabled> Brand Design</li>
-                <li><input type="checkbox" disabled> Market Analysis</li>
-                <li><input type="checkbox" disabled> Production</li>
+                <li><input type="checkbox" disabled checked> Brand Design</li>
+                <li><input type="checkbox" disabled checked> Market Analysis</li>
+                <li><input type="checkbox" disabled checked> Production</li>
               </ul>
               <button class="btn bg-transparent border border-2 w-100">CONTACT US</button>
             </div>
