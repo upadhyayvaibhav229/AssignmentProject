@@ -71,6 +71,21 @@ border-skin {
 .containerr{
   margin-left: 1rem;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}
+.filter-btn {
+  cursor: pointer;
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.filter-btn.active {
+  color: white; /* Or whatever highlight style you want */
+  font-weight: bold;
+}
+
 /* hero section profile */
 .profile {
   margin-left: 2rem !important;
@@ -105,6 +120,8 @@ border-skin {
   justify-content: center;
   cursor: pointer;
 }
+
+
 
 /* Latest work */
 
