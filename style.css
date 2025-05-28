@@ -23,7 +23,7 @@ body{
   background-color: #F3D1BF !important;
 }
 
-border-skin {
+.border-skin {
   border-color: 2px solid #F3D1BF !important;
 }
 
@@ -157,6 +157,15 @@ border-skin {
   height: 100vh;
 }
 
+/* pricing */
+#designer{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+  margin-top: 1rem;
+  text-align: left;
+}
 
 /* FAQ */
 /* toggle button */
@@ -204,6 +213,7 @@ border-skin {
 .role {
   font-size: 0.9rem;
   color: #ccc;
+  text-align: left;
 }
 
 .card {

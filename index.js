@@ -1,59 +1,59 @@
 document.getElementById("myForm").addEventListener('submit', (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const email = document.getElementById('email').value.trim();
-    const subject = document.getElementById('subject').value.trim();
-    const message = document.getElementById('message').value.trim();
-    const errorMsg = document.getElementById("errorMsg");
-    const successMsg = document.getElementById("successMsg");
+  const email = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const errorMsg = document.getElementById("errorMsg");
+  const successMsg = document.getElementById("successMsg");
 
-    errorMsg.textContent = '';
-    successMsg.textContent = "";
-
-
+  errorMsg.textContent = '';
+  successMsg.textContent = "";
 
 
-    const error = validateForm(subject, email, message);
 
-    if (error) {
-        showError(error)
-    } else {
-        successMsg.textContent = "Form submitted successfully!";
-        setTimeout(()=>{
-            successMsg.textContent = "";
 
-        },2000)
-        document.getElementById('myForm').reset();
-    }
+  const error = validateForm(subject, email, message);
+
+  if (error) {
+    showError(error)
+  } else {
+    successMsg.textContent = "Form submitted successfully!";
+    setTimeout(() => {
+      successMsg.textContent = "";
+
+    }, 2000)
+    document.getElementById('myForm').reset();
+  }
 
 })
 
 // Helper functions
 function isValidsubject(subject) {
-    return subject.length > 0;
+  return subject.length > 0;
 }
 
 // Main validation function
 function validateForm(subject, email, password) {
-    if (!isValidsubject(subject)) {
-        return "subject is required.";
-    }
+  if (!isValidsubject(subject)) {
+    return "subject is required.";
+  }
 
-    if (!isValidEmail(email)) {
-        return "Please enter a valid email.";
-    }
+  if (!isValidEmail(email)) {
+    return "Please enter a valid email.";
+  }
 
-    //   if (!isValidPassword(message)) {
-    //     return "Enter message is required.";
-    //   }
+  //   if (!isValidPassword(message)) {
+  //     return "Enter message is required.";
+  //   }
 
-    return null; // No errors
+  return null; // No errors
 }
 
 
 function isValidEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email);
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
 }
 
 // function isValidPassword(message) {
@@ -61,8 +61,8 @@ function isValidEmail(email) {
 // }
 
 function showError(message) {
-    const errorMsg = document.getElementById("errorMsg");
-    errorMsg.textContent = message;
+  const errorMsg = document.getElementById("errorMsg");
+  errorMsg.textContent = message;
 }
 
 
@@ -119,4 +119,31 @@ document.addEventListener("DOMContentLoaded", () => {
       filterItems(filter);
     });
   }
+});
+
+
+// counting feature
+  const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+  // Extract suffix: anything that's NOT a digit or comma
+  const suffix = counter.innerText.replace(/[0-9.]/g, '');
+
+  const target = +counter.getAttribute('data-target');
+  let current = 0;
+
+  const updateCounter = () => {
+    const increment = target / 200;
+
+    if (current < target) {
+      current += increment;
+      // Add suffix back after the number
+      counter.innerText = Math.ceil(current).toLocaleString() + suffix;
+      setTimeout(updateCounter, 10);
+    } else {
+      counter.innerText = target.toLocaleString() + suffix;
+    }
+  };
+
+  updateCounter();
 });
