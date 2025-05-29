@@ -72,6 +72,19 @@ body{
   margin-left: 1rem;
 }
 
+.fluid1{
+  height: 400px !important;
+  width: 400px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .containerr{
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -107,6 +120,16 @@ body{
   letter-spacing: -2px;
 }
 
+@media only screen and (max-width: 768px) {
+  .heading{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -2px;
+  }
+  
+}
+
 
 /* about section */
 .play-button {
@@ -121,6 +144,26 @@ body{
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+ .about{
+  h2{
+    font-size: 40px !important;
+    line-height: 56px;
+    letter-spacing: -2px;
+  }
+
+  p{
+    font-size: 16px !important;
+  }
+
+  #p1{
+    font-size: 32px !important;
+  }
+ }
+
+ 
+  
+}
 
 
 /* Latest work */
